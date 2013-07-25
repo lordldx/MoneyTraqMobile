@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="moneytraq">
   <head>
     <title>MoneyTraqMobile</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
@@ -14,26 +14,18 @@
     <script src="../js/MoneyTraqMobile.js" type="text/javascript"></script>
 
     <!-- Login page -->
-    <link rel="stylesheet" href="../css/login.css" />
     <script src="../js/ui/login.js" type="text/javascript"></script>
     <script src="../js/controllers/LoginController.js" type="text/javascript"></script>
 
   </head>
 
   <body>    
-    <div id="pageLogin" data-role="page">
-
+    <div data-role="page">
       <div data-role="header">
         <h1>MoneyTraq</h1>        
-      </div> <!-- end of header of pageLogin -->
-
-      <div data-role="content" ng-controller="LoginController">
-        <input type="text" name="login" id="txtUsername" value="" placeholder="Username" ng-model="Username" />
-        <input type="password" name="password" id="txtPassword" value="" placeholder="Password" ng-model="Password" />
-        <a href="#" id="btnLogin" data-role="button" data-theme="a" ng-click="Login()">Login</a>
-      </div> <!-- end of content of pageLogin -->
-
-    </div> <!-- end of pageLogin -->
+      </div> <!-- end of header  -->
+      <div ng-view></div> <!-- content -->
+    </div> <!-- end of page -->
 
     <script type="text/javascript">
       <!-- initialize the damn thing -->

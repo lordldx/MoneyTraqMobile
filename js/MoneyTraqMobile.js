@@ -4,6 +4,16 @@
 var MoneyTraqMobile = {
     initialize: function() {
         this.bindEvents();
+
+        angular.module('moneytraq')
+            .config(function($routeProvider) {
+                $routeProvider
+                    .when('/', {controller:LoginController, templateUrl:'login.html'})
+                    .when('/overview', {controller:OverviewController, templateUrl:'overview.html'})
+                    .when('/newTransaction',{controller:TransactionController, templateUrl:'newTransaction.html'})
+                    .when('/newTransactionDetail',{controller:TransactionController, templateUrl:'newTransactionDetail.html'})
+                    .otherwise({redirectTo:'/'});
+            });
     },
 
     bindEvents: function() {
