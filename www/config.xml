@@ -23,8 +23,6 @@
     xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.moneytraq.mobile"
-    name      = "MoneyTraqMobile"
-    description="Mobile client for MoneyTraq" 
     versionCode="10" 
     version   = "1.0.0">
     <preference name="AllowInlineMediaPlayback" value="false" />
@@ -43,6 +41,10 @@
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="TopActivityIndicator" value="gray" />
 
+    <name>MoneyTraqMobile</name>
+
+    <description>Mobile client for MoneyTraq</description>
+    
     <content src="index.html" />
 
     <plugins>
