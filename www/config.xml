@@ -22,7 +22,9 @@
 <widget 
     xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.example"
+    id        = "com.moneytraq.mobile"
+    name      = "MoneyTraqMobile"
+    description="Mobile client for MoneyTraq" 
     versionCode="10" 
     version   = "1.0.0">
     <preference name="AllowInlineMediaPlayback" value="false" />
@@ -44,8 +46,6 @@
     <content src="index.html" />
 
     <plugins>
-        <plugin name="SMSComposer" value="SMSComposer" />
-        <plugin name="EmailComposer" value="EmailComposer" />
         <plugin name="Device" value="CDVDevice" />
         <plugin name="Logger" value="CDVLogger" />
         <plugin name="Camera" value="CDVCamera" />

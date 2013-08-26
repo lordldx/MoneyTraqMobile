@@ -1,5 +1,6 @@
 
-function LoginController($scope) {
+function LoginController($scope, $window) {
+    $scope.$window = $window;
 
     $scope.Init = function() {
     if (window.localStorage['userName'] != undefined && window.localStorage['password'] != undefined) {
@@ -8,7 +9,7 @@ function LoginController($scope) {
     }        
     }
 
-    $scope.Login = function() {
-        alert("username: " + $scope.Username + "; password: " + $scope.Password);
+    $scope.Login = function($location) {
+        $window.location.href = 'overview';
     }
 }
