@@ -5,7 +5,7 @@ var MoneyTraqMobile = {
     initialize: function() {
         this.bindEvents();
 
-        angular.module('MoneyTraqMobile', [])
+        angular.module('MoneyTraqMobile', ['ajoslin.mobile-navigate'])
             .config(function($routeProvider, $locationProvider) {
 
                 // Routes
